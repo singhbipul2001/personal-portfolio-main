@@ -108,7 +108,7 @@ if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
 themeToggle.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
 
-    if (body.classList.contains('dark-mode')) {
+    if (body.classList.contains('dark-mode')) { 
         themeIcon.classList.remove('fa-moon');
         themeIcon.classList.add('fa-sun');
         localStorage.setItem('theme', 'dark');
