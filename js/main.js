@@ -118,7 +118,7 @@ themeToggle.addEventListener('click', () => {
         localStorage.setItem('theme', 'light');
     }
 });
-
+// here we are updating 
 // Animate skill bars when in view
 function animateSkillBars() {
     const skillBars = document.querySelectorAll('.skill-progress span');
