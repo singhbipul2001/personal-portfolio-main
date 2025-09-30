@@ -56,6 +56,7 @@ h5 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     line-height: 1.2;
+    color: var(--darker);
 }
 
 .container {
@@ -78,6 +79,7 @@ h5 {
     display: flex;
     justify-content: space-between;
     margin-bottom: 8px;
+    color: var(--text);
 }
 
 .skill-progress {
@@ -474,8 +476,6 @@ header {
 
 .education-awards .education-section {
     flex: 0.3;
-    
-
 }
 
 .education-awards .awards-section {
@@ -484,10 +484,6 @@ header {
 .education-awards .awards-section h4 {
     color: var(--primary);
 }
-
-/* .education-awards .awards-section ul {
-    color: var(--text);
-} */
 
 .certifications {
     flex: 1;
@@ -586,7 +582,6 @@ header {
 .folder-card p {
     color: var(--text-light);
 }
-
 
 .project-grid {
     display: grid;
@@ -855,6 +850,116 @@ footer {
     font-size: 0.9rem;
 }
 
+/* Dark Mode */
+.dark-mode {
+    --light: #0f172a;
+    --gray: #334155;
+    --dark: #f1f5f9;
+    --darker: #f8fafc;
+    --text: #cbd5e1;
+    --text-light: #94a3b8;
+    --white: #1e293b;
+    --header-bg: rgba(30, 41, 59, 0.95);
+    --hero-bg-start: #020617;
+    --hero-bg-end: #0f172a;
+    --contact-bg-start: #020617;
+    --contact-bg-end: #0f172a;
+    --footer-bg: #020617;
+    --footer-text: #f8fafc;
+    --footer-gray: #94a3b8;
+    --contact-form-bg: #1e293b;
+    --contact-form-border: #334155;
+    --contact-form-label: #f8fafc;
+    --contact-icon-bg: #2563eb;
+    --contact-icon-color: #ffffff;
+    --contact-text-h4: #f8fafc;
+    --social-bg: #1e293b;
+    --social-color: #2563eb;
+    --social-hover-bg: #2563eb;
+    --social-hover-color: #ffffff;
+    --form-focus-border: #2563eb;
+    --form-focus-shadow: rgba(37, 99, 235, 0.3);
+}
+
+.dark-mode body {
+    background-color: var(--light);
+    color: var(--text);
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode h3,
+.dark-mode h4,
+.dark-mode h5 {
+    color: var(--darker);
+}
+
+.dark-mode .skill-info {
+    color: var(--text);
+}
+
+.dark-mode .skill-progress {
+    background-color: var(--gray);
+}
+
+.dark-mode .btn {
+    color: var(--white);
+}
+
+.dark-mode .btn-outline {
+    color: var(--primary);
+}
+
+.dark-mode .section-title h2 {
+    color: var(--darker);
+}
+
+.dark-mode .nav-links a {
+    color: var(--dark);
+}
+
+.dark-mode .hero-text p {
+    color: var(--text);
+}
+
+.dark-mode .about-text p {
+    color: var(--text);
+}
+
+.dark-mode .about-info.mt-4 span {
+    color: var(--text);
+}
+
+.dark-mode .timeline-content p {
+    color: var(--text);
+}
+
+.dark-mode .timeline-content .date {
+    color: var(--text-light);
+}
+
+.dark-mode .card ul {
+    color: var(--text);
+}
+
+.dark-mode .cert-info p {
+    color: var(--text-light);
+}
+
+.dark-mode .project-content p {
+    color: var(--text);
+}
+
+.dark-mode .contact-text p {
+    color: var(--text);
+}
+
+.dark-mode .form-group input,
+.dark-mode .form-group textarea {
+    background-color: var(--white);
+    color: var(--text);
+}
+
 /* Responsive Design */
 @media (max-width: 992px) {
     .hero-content {
@@ -956,37 +1061,6 @@ footer {
         max-width: 300px;
         margin-bottom: 10px;
     }
-}
-
-/* Dark Mode */
-.dark-mode {
-    --light: #0f172a;
-    --gray: #334155;
-    --dark: #f1f5f9;
-    --darker: #f8fafc;
-    --text: #cbd5e1;
-    --text-light: #94a3b8;
-    --white: #1e293b;
-    --header-bg: rgba(30, 41, 59, 0.95);
-    --hero-bg-start: #020617;
-    --hero-bg-end: #0f172a;
-    --contact-bg-start: #020617;
-    --contact-bg-end: #0f172a;
-    --footer-bg: #020617;
-    --footer-text: #f8fafc;
-    --footer-gray: #94a3b8;
-    --contact-form-bg: #1e293b;
-    --contact-form-border: #334155;
-    --contact-form-label: #f8fafc;
-    --contact-icon-bg: #2563eb;
-    --contact-icon-color: #ffffff;
-    --contact-text-h4: #f8fafc;
-    --social-bg: #1e293b;
-    --social-color: #2563eb;
-    --social-hover-bg: #2563eb;
-    --social-hover-color: #ffffff;
-    --form-focus-border: #2563eb;
-    --form-focus-shadow: rgba(37, 99, 235, 0.3);
 }
 
 .theme-toggle {

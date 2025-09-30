@@ -108,7 +108,7 @@ if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
 themeToggle.addEventListener('click', () => {
     body.classList.toggle('dark-mode');
 
-    if (body.classList.contains('dark-mode')) { 
+    if (body.classList.contains('dark-mode')) {
         themeIcon.classList.remove('fa-moon');
         themeIcon.classList.add('fa-sun');
         localStorage.setItem('theme', 'dark');
@@ -118,7 +118,7 @@ themeToggle.addEventListener('click', () => {
         localStorage.setItem('theme', 'light');
     }
 });
-// here we are updating 
+// here we are
 // Animate skill bars when in view
 function animateSkillBars() {
     const skillBars = document.querySelectorAll('.skill-progress span');
